@@ -1,4 +1,4 @@
-# KiCad 7 Library for Commander X16 expansion ports
+# KiCad 8 Library for Commander X16 expansion ports
 
 This is a pair of symbols, and a footprint for the card edge
 of expansion cards & cartridges.
@@ -16,11 +16,23 @@ away.
 
 The connector is about 0.4mm narrower than the data sheet suggests.
 That is to allow for PCB manufacturing tolerances while staying under
-the suggested width. And it made the width a whole number.
+the suggested width. And it made the width a whole number. Having
+handled the prototype card, I hope that this will make cards designed
+with this footprint easier to insert.
 
-Whenever I can get some additional mechanical information about
-the cards (maximum extents, mainly) I will update the footprint
-with lines to indicate those.
+The footprint includes a number of user drawing lines.
+* Distances to the rear and front of the motherboard
+* Two heights ("low profile" and "full height") are marked along the
+  rear end of the card. "Low profile" is the height of the TexElec
+  prototyping card. "Full height" is what I think you can safely get
+  away with before you should start taking your own measurements of
+  whatever slot cover you're going to use.
+* The rear end of the card has a number of lines indicating what space
+  you've got available to go below the top of the card socket on the
+  motherboard.
+* I suggest not going below the top of the socket on the
+  other side, as that will require 3D reasoning to ensure you remain
+  clear of C53 (a tall electrolytic).
 
 ### Symbols
 
@@ -60,10 +72,10 @@ slaves to stretch the clock signal as necessary.)
 ## !!! WARNING !!!
 
 I haven't manufactured anything based on these. Use at your own risk.
-I've got an X16 coming in the February batch. If I can get mechanical
-information before then, I'll have cards ready for testing when it
-arrives. If I can't get mechanical information before then, I'll only
-be able to place orders some time after I get it.
+I've based the dimensions off of the relevant data sheets, my X16, and
+the prototyping card I ordered. I haven't had time to have any PCBs
+manufactured yet. I'll update this/remove the warning when I've had
+a chance to get some cards made and tested them.
 
 ## Fixes welcomed
 
