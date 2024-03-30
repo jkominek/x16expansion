@@ -5,6 +5,8 @@ of expansion cards & cartridges.
 
 ### Footprint
 
+#### Expansion card
+
 The mating card edge connector on the X16 is the TE Connectivity
 1-5530843-8. The card edge footprint matches the suggested layout
 of that part's data sheet. I also sanity checked it against the
@@ -34,6 +36,34 @@ The footprint includes a number of user drawing lines.
   other side, as that will require 3D reasoning to ensure you remain
   clear of C53 (a tall electrolytic).
 
+#### Cartridge
+
+Most of the above applies to the cartridge as well. Confirmation of
+dimensions was carried out with a blank case purchased from Muramasa
+Entertainment.
+
+Be aware that the front copper layer faces DOWN relative to the CX16
+motherboard, not up as one might assume. The footprint is designed
+assuming the front of the cartridge case will face UP.
+
+The cart has more of the board edge defined, included in an internal
+hole.  There are also a number of keep out zones defined, for places
+where the case comes into contact with the PCB for retention purposes.
+
+The top edge of the board is missing from the footprint, so you may
+make a board of minimum height, or longer if you wish. The reasonable
+maximum is marked on the user drawings layer, but you might have
+larger cases available to you, or you might machine away a portion of
+the case and have your board extend out. (Connectors? A display?  I
+look forward to seeing what you come up with.)
+
+Keep in mind your limited vertical space. There is approximately
+11.8mm of total internal height for board; I think it is divided about
+evenly between the two sides, but I made no attempt to measure
+this. Certainly if any of your components exceed ~4mm in height, you
+should take some careful measurements and do some prototyping of your
+own.
+
 ### Symbols
 
 There are two symbols, the main one is the "physical" symbol, where
@@ -45,7 +75,7 @@ same net, and reduces the number of lines you've got to draw.)
 
 #### Notes about the pins
 
-The IO pins are driven by a 74ACT138, making them active low signals.
+The IOx pins are driven by a 74ACT138, making them active low signals.
 I've added bars to their signal names to reflect this. I realize that
 the 6502 derived signals use a "B" to indicate that they're active
 low, but I'm leaving them be to better match existing 6502 docs.
