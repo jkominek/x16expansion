@@ -3,9 +3,16 @@
 This is a pair of symbols, and a footprint for the card edge
 of expansion cards & cartridges.
 
-### Footprint
+## Using this library
 
-#### Expansion card
+I suggest including this repo as a git submodule within your project.
+Then it's easy for your KiCad project to reference the contents in a
+portable fashion. I'll keep things stable in here. I'm about done
+adding stuff anyways, and then it'll just be tweaked to fix errors.
+
+## Footprints
+
+### Expansion card
 
 The mating card edge connector on the X16 is the TE Connectivity
 1-5530843-8. The card edge footprint matches the suggested layout
@@ -36,7 +43,7 @@ The footprint includes a number of user drawing lines.
   other side, as that will require 3D reasoning to ensure you remain
   clear of C53 (a tall electrolytic).
 
-#### Cartridge
+### Cartridge
 
 Most of the above applies to the cartridge as well. Confirmation of
 dimensions was carried out with a blank case purchased from Muramasa
@@ -64,7 +71,9 @@ this. Certainly if any of your components exceed ~4mm in height, you
 should take some careful measurements and do some prototyping of your
 own.
 
-### Symbols
+## Symbols
+
+### Expansion Port / Cartridge
 
 There are two symbols, the main one is the "physical" symbol, where
 all pins are positioned to correspond to their physical pin. The "Alt"
@@ -98,6 +107,33 @@ Finally, while the SDA pin is bidirectional, the SCL pin is marked as
 an output of the edge connector, to match the KiCad convention of I2C
 masters having SCL as an output. (This is despite the ability of I2C
 slaves to stretch the clock signal as necessary.)
+
+### I2C Port
+
+This is a simple symbol intended to be used with a right-angled
+2x5 female header, to make a little board that sticks up from the
+motherboard. Something like the Würth Elektronik 613010243121.
+
+### User port
+
+Same idea, but you'd need a larger connector.
+
+### Audio option
+
+TODO
+
+### Other headers
+
+* The extra 65C22 pin header doesn't have enough to support a complete
+  device (no power), so I don't consider it interesting enough to
+  bother with.
+* SNES 3/4 really only has one thing you could do with it, which is
+  bring it out to some more controller ports, so there's not much
+  reuse value for a symbol.
+* Front panel should just go to LEDs via cables, not much sense in one
+  larger connector to it.
+* For the VERA header, I'd sooner make a symbol representing a place
+  to plug a VERA into, to encourage reuse of them in other applications.
 
 ## !!! WARNING !!!
 
