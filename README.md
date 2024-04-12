@@ -5,10 +5,14 @@ of expansion cards & cartridges.
 
 ## Using this library
 
+This library is available as a KiCad module, that you can install
+with the KiCad "Plugin and Content Manager". I suggest doing so.
 I suggest including this repo as a git submodule within your project.
-Then it's easy for your KiCad project to reference the contents in a
-portable fashion. I'll keep things stable in here. I'm about done
-adding stuff anyways, and then it'll just be tweaked to fix errors.
+Look for the latest release in the "Releases" section of the Github
+project.
+
+I'll keep things stable in here. I'm about done adding stuff, and then
+it'll just be tweaked to fix errors.
 
 ## Footprints
 
@@ -148,3 +152,12 @@ a chance to get some cards made and tested them.
 If you spot any errors, please report them. PRs welcomed.
 I do ask that you make a point of including evidence for any
 dimensional changes.
+
+## Related
+
+You might be interested in the following:
+
+* https://www.kicad.org/
+  * Consider donating to KiCad if you find it, or this library, useful.
+* https://github.com/Alarm-Siren/6502-kicad-library
+  * RetroLib, a KiCad symbol library for 6502 and related retro microchips
