@@ -57,7 +57,7 @@ Be aware that the front copper layer faces DOWN relative to the CX16
 motherboard, not up as one might assume. The footprint is designed
 assuming the front of the cartridge case will face UP.
 
-The cart has more of the board edge defined, included in an internal
+The cart has more of the board edge defined, including an internal
 hole.  There are also a number of keep out zones defined, for places
 where the case comes into contact with the PCB for retention purposes.
 
