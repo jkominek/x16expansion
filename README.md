@@ -141,11 +141,9 @@ TODO
 
 ## !!! WARNING !!!
 
-I haven't manufactured anything based on these. Use at your own risk.
-I've based the dimensions off of the relevant data sheets, my X16, and
-the prototyping card I ordered. I haven't had time to have any PCBs
-manufactured yet. I'll update this/remove the warning when I've had
-a chance to get some cards made and tested them.
+I've had the cartridge footprint manufactured, and it seems to be fine.
+Everything here remains use-at-your-own-risk, of course, but I will be
+using them without hesitation going forward.
 
 ## Fixes welcomed
 
