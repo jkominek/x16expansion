@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CommanderX16Expansion:CommanderX16Expansion"
+		(property "Footprint" "PCM_CommanderX16Expansion:CommanderX16Expansion"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1180,7 +1180,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CommanderX16Expansion:CommanderX16Expansion"
+		(property "Footprint" "PCM_CommanderX16Expansion:CommanderX16Expansion"
 			(at 0 0 0)
 			(effects
 				(font
