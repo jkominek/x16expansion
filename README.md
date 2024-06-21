@@ -27,11 +27,13 @@ the card edge for the bevel to be routed away. That's marked by
 a keep out zone, which disallows everything, since it'll be machined
 away.
 
-The connector is about 0.4mm narrower than the data sheet suggests.
-That is to allow for PCB manufacturing tolerances while staying under
-the suggested width. And it made the width a whole number. Having
-handled the prototype card, I hope that this will make cards designed
-with this footprint easier to insert.
+The card edge is 0.74mm narrower than the data sheet says the space is
+wide. It unfortunately specifies no tolerance. This takes us down to a
+nice round number (78mm), covers the 0.4mm necessary for the worst
+case from the PCB manufacturer, and leaves another 0.34mm for the card
+edge connector to eat up. Having handled the prototype card, I hope
+that this will make cards designed with this footprint easier to
+insert.
 
 The footprint includes a number of user drawing lines.
 * Distances to the rear and front of the motherboard
