@@ -143,9 +143,9 @@ TODO
 
 ## !!! WARNING !!!
 
-I've had the cartridge footprint manufactured, and it seems to be fine.
-Everything here remains use-at-your-own-risk, of course, but I will be
-using them without hesitation going forward.
+I've had the expansion card and cartridge footprints manufactured, and they
+seem to be fine. Everything here remains use-at-your-own-risk, of course, but
+I will be using them without hesitation going forward.
 
 ## Fixes welcomed
 
