@@ -7,7 +7,6 @@ of expansion cards & cartridges.
 
 This library is available as a KiCad module, that you can install
 with the KiCad "Plugin and Content Manager". I suggest doing so.
-I suggest including this repo as a git submodule within your project.
 Look for the latest release in the "Releases" section of the Github
 project.
 
